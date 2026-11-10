@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b16">
+<meta name="description" content="Akbar Bin Nazli — System Engineer working across manufacturing digitalization, backend systems and developing cloud and DevOps skills.">
+<title>Akbar Bin Nazli | Portfolio</title>
+<style>
+:root{--bg:#080b16;--card:#101426;--cyan:#00f5ff;--purple:#a855f7;--pink:#ff2d95;--text:#edf4ff;--muted:#9aa8c7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:24px;font-family:"Segoe UI",Tahoma,sans-serif;color:var(--text);background:radial-gradient(ellipse at 15% 15%,#10254b 0%,transparent 45%),radial-gradient(ellipse at 85% 85%,#301044 0%,transparent 40%),var(--bg);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(#00f5ff0a 1px,transparent 1px),linear-gradient(90deg,#00f5ff0a 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+.profile-card{position:relative;width:100%;max-width:760px;padding:40px 32px;text-align:center;background:linear-gradient(145deg,#11182bea,#0b0e1bf5);border:1px solid #00f5ff65;border-radius:20px;box-shadow:0 0 25px #00f5ff15,0 0 60px #a855f710,inset 0 0 25px #00f5ff05;animation:appear .8s ease-out}
+.profile-card::before{content:"";position:absolute;top:-1px;left:15%;width:70%;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),var(--purple),transparent);box-shadow:0 0 14px var(--cyan)}
+.status{display:inline-flex;align-items:center;gap:8px;margin-bottom:28px;padding:8px 13px;border:1px solid #00f5ff45;border-radius:30px;color:var(--cyan);background:#00f5ff09;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.status-dot{width:7px;height:7px;background:#36ff9b;border-radius:50%;box-shadow:0 0 10px #36ff9b;animation:blink 1.5s infinite}
+.avatar{display:flex;align-items:center;justify-content:center;width:112px;height:112px;margin:0 auto 24px;border:2px solid var(--cyan);border-radius:50%;color:var(--cyan);background:linear-gradient(135deg,#142747,#26113c);box-shadow:0 0 22px #00f5ff35;font-size:36px;font-weight:800;letter-spacing:2px}
+h1{margin-bottom:12px;font-size:clamp(24px,5vw,32px);font-weight:800;letter-spacing:1px;line-height:1.3;color:var(--cyan);text-shadow:0 0 18px #00f5ff40}
+.role{margin-bottom:22px;color:var(--purple);font-size:15px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.bio{max-width:620px;margin:0 auto 30px;color:var(--muted);font-size:15px;line-height:1.8}
+.section-title{margin-bottom:16px;color:var(--text);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.skills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px}
+.skill{padding:11px 17px;border:1px solid #00f5ff55;border-radius:8px;background:#00f5ff08;color:var(--cyan);font-size:13px;transition:.25s ease}
+.skill:hover{border-color:var(--cyan);background:#00f5ff15;box-shadow:0 0 15px #00f5ff20;transform:translateY(-3px)}
+.fun-fact{padding:19px;border-left:3px solid var(--pink);border-radius:0 10px 10px 0;background:linear-gradient(90deg,#ff2d9512,#a855f708);text-align:left}
+.fun-fact h2{margin-bottom:8px;color:var(--pink);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.fun-fact p{color:#c0c9df;font-size:13px;line-height:1.8}
+.content-section{margin-top:30px;text-align:left}.content-section>.section-title{text-align:center}
+.section-copy{color:var(--muted);font-size:14px;line-height:1.8}
+.skill-groups,.project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.skill-group,.project,.experience-card{padding:17px;border:1px solid #00f5ff25;border-radius:10px;background:linear-gradient(145deg,#00f5ff08,#a855f708)}
+.skill-group h3,.project h3,.experience-card h3{margin-bottom:8px;color:var(--cyan);font-size:14px}
+.skill-group p,.project p,.experience-card p{color:#c0c9df;font-size:13px;line-height:1.7}
+.project p+p,.experience-card p+p{margin-top:8px}
+.contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.contact-links a{padding:10px 14px;border:1px solid #00f5ff55;border-radius:8px;color:var(--cyan);text-decoration:none;font-size:13px;transition:.25s ease}.contact-links a:hover{background:#00f5ff15;box-shadow:0 0 15px #00f5ff20}
+.footer{margin-top:28px;color:#657391;font-size:10px;letter-spacing:2px}.footer span{color:var(--cyan)}
+@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+@media(max-width:480px){body{padding:16px}.profile-card{padding:32px 20px}.skill{padding:10px 13px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="profile-card">
+<div class="status"><span class="status-dot"></span>Systems Engineer | Growing in Cloud &amp; DevOps</div>
+<div class="avatar" aria-label="Akbar's initials">AN</div>
+<h1>AKBAR BIN NAZLI</h1>
+<p class="role">System Engineer | Manufacturing Digitalization &amp; Backend Systems</p>
+<p class="bio">System Engineer with 4+ years of experience supporting ERP and production systems, backend applications, databases, operational monitoring, IoT integrations and digitalization in manufacturing. Experienced with Microsoft SQL Server, Node.js, Express.js, Node-RED, Grafana, REST APIs and JavaScript, and building further capability in cloud operations and DevOps.</p>
+<h2 class="section-title">Technical Skills</h2>
+<div class="skills"><span class="skill">ERP &amp; Production Systems</span><span class="skill">Node.js</span><span class="skill">Express.js</span><span class="skill">JavaScript</span><span class="skill">REST APIs</span><span class="skill">Microsoft SQL Server</span><span class="skill">Node-RED</span><span class="skill">Grafana</span><span class="skill">IoT &amp; Modbus</span><span class="skill">Git &amp; GitHub</span><span class="skill">AWS Fundamentals</span></div>
+<section class="fun-fact"><h2>✦ A Little About Me</h2><p>My work connects manufacturing operations with practical digital systems: supporting production workflows, integrating devices and services, and making data easier to use. I’m progressing toward DevOps Engineering, Cloud Operations, SRE, backend engineering and infrastructure automation, while continuing to develop my cloud and multi-cloud skills.</p></section>
+<section class="content-section"><h2 class="section-title">Professional Experience</h2><article class="experience-card"><h3>System Engineer | Alumac Industries Sdn. Bhd. | Jan 2022 – Present</h3><p>Support manufacturing ERP and production systems, troubleshoot operational issues, and deliver digital solutions that improve access to production and business data. Build monitoring and data-acquisition solutions with Node-RED, Grafana and SQL Server; integrate IoT devices, backend services, databases and dashboards; and develop Node.js/Express.js services and REST integrations. Collaborate with IT vendors on system and network troubleshooting and service continuity.</p></article><article class="experience-card" style="margin-top:12px"><h3>Earlier Engineering Experience</h3><p><strong>Process Engineer, B-Braun Medical Industries Sdn. Bhd. (Aug 2019 – Jan 2020):</strong> Supported regulated manufacturing process monitoring with SCADA/HMI and collaborated on troubleshooting and continuous improvement.</p><p><strong>Intern, Roboticist Sdn. Bhd. (Jan 2019 – Jun 2019):</strong> Supported robotics education and projects using VEX platforms, RobotC and C.</p></article></section>
+<section class="content-section"><h2 class="section-title">Featured Projects</h2><div class="project-list">
+<article class="project"><h3>Operational Alerting Service</h3><p><strong>Problem:</strong> Operational data can require frequent manual checking.</p><p><strong>Implementation:</strong> Node.js and Express.js service evaluates backend data in Microsoft SQL Server and sends notifications.</p><p><strong>Value:</strong> Helps surface operational events and supports faster response.</p></article>
+<article class="project"><h3>Monitoring &amp; Telemetry Dashboard</h3><p><strong>Problem:</strong> Industrial signals need to be visible for operational monitoring.</p><p><strong>Implementation:</strong> Integrates field data using Modbus and Node-RED, with Grafana visualization and SQL Server storage.</p><p><strong>Value:</strong> Brings operational conditions into a shared dashboard and reduces manual data logging.</p></article>
+<article class="project"><h3>Internal Digital Application</h3><p><strong>Problem:</strong> A manual operational record process needed a digital workflow.</p><p><strong>Implementation:</strong> Mobile-enabled React Native application with Node.js/Express.js backend and SQL Server integration.</p><p><strong>Value:</strong> Connects staff workflows with backend business data.</p></article>
+<article class="project"><h3>KPI &amp; Reporting</h3><p><strong>Problem:</strong> Operational reporting needs reusable data preparation and dashboards.</p><p><strong>Implementation:</strong> SQL queries and stored procedures with Grafana dashboards.</p><p><strong>Value:</strong> Supports KPI analysis and access to operational reporting.</p></article>
+</div></section>
+<section class="content-section"><h2 class="section-title">Cloud &amp; DevOps Journey</h2><p class="section-copy">AWS EC2 and S3 fundamentals, basic Git and GitHub, and infrastructure exposure form the current foundation. I’m continuing to build hands-on skills in Linux, Docker, Terraform, CI/CD, monitoring and multi-cloud technologies. These are active learning areas, distinct from my professional manufacturing systems and backend experience.</p></section>
+<section class="content-section"><h2 class="section-title">Certifications &amp; Achievements</h2><div class="skill-groups"><article class="skill-group"><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services cloud fundamentals certification.</p></article><article class="skill-group"><h3>AWS re/Start Graduate</h3><p>Graduate of the AWS re/Start program.</p></article><article class="skill-group"><h3>SIRIM Smart Tech Up</h3><p>Selected to lead the digital-transformation assessment, coordinating technical evaluation activities and contributing to the organization’s overall assessment score of 55%.</p></article></div></section>
+<section class="content-section"><h2 class="section-title">Contact</h2><p class="section-copy" style="text-align:center;margin-bottom:14px">Open to opportunities across systems engineering, backend integration, cloud and infrastructure operations, and DevOps pathways.</p><div class="contact-links"><a href="mailto:akbarnazli408@gmail.com">Email</a><a href="https://linkedin.com/in/akbar-nazli-408" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/akbar-nazli5432" target="_blank" rel="noopener noreferrer">GitHub</a></div></section>
+<footer class="footer">BUILDING SYSTEMS. <span>AUTOMATING TOMORROW.</span></footer>
+</main>
+</body>
+</html>
